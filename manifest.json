@@ -1,9 +1,0 @@
-{
-      "name": "StepUp Checklist",
-      "short_name": "StepUp",
-      "description": "یک چک‌لیست روزانه برای بهبود عادات و بهره‌وری",
-      "start_url": "/",
-      "display": "standalone",
-      "background_color": "#e8f5e9",
-      "theme_color": "#2e7d32"
-    }
