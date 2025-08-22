@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepUp - چک‌لیست روزانه</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+      <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center text-success mb-4">StepUp - چک‌لیست روزانه</h1>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title">چک‌لیست امروز (<span id="current-date"></span>)</h2>
+                <ul class="list-group" id="checklist"></ul>
+                <button class="btn btn-success mt-3" onclick="saveChecklist()">ذخیره چک‌لیست</button>
+                <p class="mt-2 text-center fw-bold" id="success-rate">نرخ موفقیت: 0%</p>
+                <button class="btn btn-primary mt-2" onclick="enableNotifications()">فعال کردن اعلان روزانه</button>
+            </div>
+        </div>
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title">تاریخچه</h2>
+                <div class="input-group mb-3">
+                    <input type="date" class="form-control" id="history-date">
+                    <button class="btn btn-outline-success" onclick="showHistory()">نمایش تاریخچه</button>
+                </div>
+                <ul class="list-group" id="history"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
